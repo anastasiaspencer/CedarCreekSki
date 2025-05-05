@@ -1,35 +1,74 @@
-body {
+body.home {
     background:#f3f3f3;
+    color: #103144;
     font-family: 'Libre Caslon Text', serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
-  }
+    text-align: center;
+    align-items: center;
+}
+body.about {
+    background:#f3f3f3;
+    color: #103144;
+    font-family: 'Libre Caslon Text', serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body.contact {
+    background:#f3f3f3;
+    color: #103144;
+    font-family: 'Libre Caslon Text', serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
   
-  header {
+header {
     background: #103144;
     color: #f3f3f3;
+    padding: 0 20px;
+    height: 70px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+    display: flex;
     font-family: 'Libre Caslon Text', serif;
-    padding: 1rem;
+    font-size: 10px;
     text-align: center;
-  }
+    align-items: center;
+    justify-content:space-between;
+}
   
-  nav a {
+nav a {
+    margin-right: 10px;
     margin: 0 1rem;
     color: #f3f3f3;
     text-decoration: none;
     font-family: 'Libre Caslon Text', serif;
-  }
+    font-size: 16px;
+}
   
-  section {
-    padding: 2rem;
-  }
+section {
+    padding: 1.2rem;
+}
   
-  footer {
+footer {
     background: #103144;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
     color: #f3f3f3;
-  }
-  
+    padding: 0 20px;
+    height: 70px;
+
+    display: flex;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.small-word {
+    font-size: 0.8em; /* 80% of the surrounding text size */
+}
