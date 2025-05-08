@@ -7,6 +7,7 @@ body.home {
     font-size: 16px;
     text-align: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 body.home p{
@@ -14,6 +15,170 @@ body.home p{
     padding-right: 5%;
 }
 
+.scrolling-gallery {
+    overflow: hidden;
+    width: 100%;
+}
+  
+.gallery-track {
+    display: flex;
+    width: calc(200%); /* because we're duplicating the images */
+    animation: scroll 30s linear infinite;
+}
+  
+.gallery-track img {
+    width: auto;
+    height: 200px; /* adjust height as needed */
+    flex-shrink: 0;
+    object-fit: cover;
+}
+  
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+
+.upcoming-events {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+  
+.upcoming-events h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #103144;
+}
+  
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-left: 25%;
+}
+  
+.date-box {
+    background-color: #9ab1cf; /* or your chosen light blue */
+    padding: 15px 20px;
+    text-align: center;
+    margin-right: 20px;
+    min-width: 60px;
+}
+  
+.date-box .month {
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+}
+  
+.date-box .day {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+  
+.event-title {
+    font-size: 1rem;
+    color: #103144;
+    text-align: left;
+}
+
+.section-header {
+    background-color: #a9bfd9; /* light blue */
+    text-align: center;
+    padding: 20px 0;
+}
+  
+.ski-camps {
+    background-color: #103144; /* dark blue */
+    color: #fff;
+    padding-bottom: 40px;
+}
+  
+.section-header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+  
+.section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+  
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* so it stacks on small screens */
+}
+  
+.section-content img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+  
+.section-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.section-content ul li {
+    margin-bottom: 15px;
+}  
+
+.lessons {
+    background-color: #f4f4f4; /* light background */
+    color: #103144; /* dark text */
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 30px solid #103144; /* dark blue top border */
+    border-bottom: 30px solid #103144; /* dark blue bottom border */
+}
+  
+.lessons h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+  
+.lesson-prices {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+}
+  
+.lesson-item {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto 10px auto;
+}
+  
+.lesson-item span {
+    font-size: 18px;
+}
+  
+.lessons p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+}
+  
+  
 /*------------------------------about us style----------------------------*/
 body.about {
     background:#f3f3f3;
