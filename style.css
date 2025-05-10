@@ -281,18 +281,15 @@ body.contact h2{
 .contact-left textarea{
     color: #8d8d8d;;
     font-size: 16px;
-    height: 100px;
-    width: 400px;
+     height: 100px;
     border: 1px #103144 solid;
     font-family: Open Sans;
     font-weight: 300;
     line-height: 26px;
-    padding-top: 15px;
-    padding-left:25px;
-    border-radius: 10px;
+     padding: 15px;
 }
 .contact-inputs:focus{
-    border: 2px solid;
+    border: 2px solid black;
 }
 
 .contact-left .name-row {
@@ -344,6 +341,7 @@ body.contact h2{
     font-weight: 400;
     line-height: 26px;
     word-wrap: break-word
+   
 }
 
 .info-item{
@@ -361,12 +359,83 @@ body.contact h2{
     .contact-inputs{
         width: 80vw;
     }
-    .contact-right{
-        display: none;
-    }
-    /* .contact-left .name-row {
+   
+    .contact-left .name-row {
         flex-direction: column;
-      } */
+        padding-right: 20px;
+      }
+    .contact-container{
+        padding: 25px;
+        width:90%;
+    }
+    .contact-left button{
+        padding: 25px;
+        width:100%;
+    }
+    body.contact h2{
+        font-size: 48px;
+        text-align: center;
+        padding-top: 10px;
+       
+    }
+    .contact-right{
+        display: flex;
+  flex-direction: column;
+
+     
+        align-items: center;
+      
+    }
+   
+    .contactimg{
+        width: 90%;
+        padding: 25px;
+        padding-top: 0px;
+        height: 75vh;
+        padding-bottom: 10px;
+    }
+
+       .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+       
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+    
+    .info-item {
+        display: flex;
+        align-items: center;  
+        gap: 1rem;  
+        margin-bottom: 2rem;  
+        width: 100%;  
+        max-width: 300px;  
+    }
+    
+    .info-item p {
+        text-align: left;  
+        margin: 0;  
+    }
+    
+    .icon {
+        flex-shrink: 0;  
+        width: 24px;  
+        height: 24px;
+      
+    }
+    .contact-description{
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 10px;
+      
+        
+    }
+   
+  
   }
   
 
