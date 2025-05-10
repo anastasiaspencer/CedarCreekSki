@@ -233,10 +233,15 @@ body.contact h2{
 }
 
 .contact-container{
-    height: 100vh;
     display: flex;
     align-items: center;
+    width: 465px;
     justify-content: space-evenly;
+    padding: 50px;
+    background: white; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10); 
+    border-radius: 10px; 
+    border: 1px #BDBDBD solid;
 }
 
 .contact-left{
@@ -244,6 +249,7 @@ body.contact h2{
     flex-direction:column;
     align-items: start;
     gap: 20px;
+    
 }
 
 .contact-left-title h3{
@@ -264,33 +270,58 @@ body.contact h2{
 .contact-inputs{
     width: 400px;
     height: 50px;
-    border: none;
+    border: 1px #103144 solid;
     outline: none;
     padding-left: 25px;
     font-weight: 500px;
-    color: blue;
-    border-radius: 60px;
+    color: black;
+    border-radius: 10px;
 }
 
 .contact-left textarea{
-    height: 140px;
+    color: #8d8d8d;;
+    font-size: 16px;
+    height: 100px;
+    width: 400px;
+    border: 1px #103144 solid;
+    font-family: Open Sans;
+    font-weight: 300;
+    line-height: 26px;
     padding-top: 15px;
     padding-left:25px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .contact-inputs:focus{
-    border: 2px solid black;
+    border: 2px solid;
 }
 
+.contact-left .name-row {
+    gap: 1rem;   
+    display: flex;
+    width: 429px;     
+  } 
+
 .contact-inputs::placeholder{
-    color: lightgray;
+    color: #8d8d8d;;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-weight: 300;
+    line-height: 26px;
+    word-wrap: break-word
 }
 .contact-left button{
     display: flex;
+    height: 45px;
+    width: 429px;
     align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
-    color: blue;
+    justify-content: center;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Open Sans;
+    font-weight: 600;
+    word-wrap: break-word;
+    color: white;
+    background-color: #103144;
     gap: 10px;
     border: none;
     border-radius: 20px;
@@ -298,8 +329,32 @@ body.contact h2{
 }
 
 .contact-right h3{
-    padding-top: 15px;
-    padding-left:25px;
+    color: #011334;
+    font-size: 36px;
+    font-family: Libre Caslon Text;
+    font-weight: 700;
+    line-height: 46px;
+    word-wrap: break-word
+}
+
+.contact-description{
+    color: #011334;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 26px;
+    word-wrap: break-word
+}
+
+.info-item{
+    color: #011334;
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+    font-family: Libre Caslon Text;
+    font-weight: 700;
+    line-height: 26px;
+    word-wrap: break-word
 }
  
   @media (max-width: 800px) {
@@ -309,6 +364,9 @@ body.contact h2{
     .contact-right{
         display: none;
     }
+    /* .contact-left .name-row {
+        flex-direction: column;
+      } */
   }
   
 
