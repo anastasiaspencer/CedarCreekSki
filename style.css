@@ -220,9 +220,6 @@ body.contact {
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
-/*------------------------------header style----------------------------*/
-=======
 body.contact h2{
     color: #103144;
     font-size: 240px;
@@ -318,7 +315,6 @@ body.contact h2{
 
 
 /*------------------------------everything else----------------------------*/
->>>>>>> Stashed changes
 header {
     background: #103144;
     color: #f3f3f3;
