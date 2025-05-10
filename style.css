@@ -217,9 +217,108 @@ body.contact {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
 /*------------------------------header style----------------------------*/
+=======
+body.contact h2{
+    color: #103144;
+    font-size: 240px;
+    font-family: Libre Caslon Text;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h3{
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color:#103144;
+    border-radius: 5;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500px;
+    color: blue;
+    border-radius: 60px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    padding-left:25px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid black;
+}
+
+.contact-inputs::placeholder{
+    color: lightgray;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: blue;
+    gap: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-right h3{
+    padding-top: 15px;
+    padding-left:25px;
+}
+ 
+  @media (max-width: 800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+  }
+  
+
+
+
+/*------------------------------everything else----------------------------*/
+>>>>>>> Stashed changes
 header {
     background: #103144;
     color: #f3f3f3;
