@@ -357,20 +357,32 @@ body.contact h2{
  
   @media (max-width: 800px) {
     .contact-inputs{
-        width: 80vw;
+        
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
    
     .contact-left .name-row {
         flex-direction: column;
-        padding-right: 20px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        
+      }
+      .contact-container textarea{
+        width: 80vw;
       }
     .contact-container{
-        padding: 25px;
+     
+        padding: 20px;
         width:90%;
+        margin: 0 auto;
+        
+      
     }
     .contact-left button{
-        padding: 25px;
-        width:100%;
+        width: 80vw;
     }
     body.contact h2{
         font-size: 48px;
@@ -381,6 +393,7 @@ body.contact h2{
     .contact-right{
         display: flex;
   flex-direction: column;
+  text-align: center;
 
      
         align-items: center;
@@ -388,10 +401,10 @@ body.contact h2{
     }
    
     .contactimg{
-        width: 90%;
+        max-width: 90%;
         padding: 25px;
         padding-top: 0px;
-        height: 75vh;
+        height: auto;
         padding-bottom: 10px;
     }
 
