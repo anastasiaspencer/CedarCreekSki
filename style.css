@@ -229,13 +229,21 @@ body.contact {
 body.contact h2{
     color: #103144;
     font-size: 240px;
-    font-family: Libre Caslon Text;
+    font-family: 'Libre Caslon Text';
     font-weight: 400;
     word-wrap: break-word;
     margin-top: 0px;
     width: 100%;
     height: 100%;
+    padding-left: 50px;
+    z-index: -1;
+    margin-bottom: 0;
 
+}
+
+.contactimg{
+    padding-left: 50%;
+    margin-top: -325px;;
 }
 
 .contact-container{
@@ -248,6 +256,9 @@ body.contact h2{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10); 
     border-radius: 10px; 
     border: 1px #BDBDBD solid;
+    margin-top: -525px;
+    margin-left: 50px;
+    margin-bottom: 100px;
 }
 
 .contact-left{
@@ -331,13 +342,20 @@ body.contact h2{
     cursor: pointer;
 }
 
+.contact-right{
+    padding-left: 55%;
+    width: 400px;
+    justify-content: center;
+}
+
 .contact-right h3{
     color: #011334;
     font-size: 36px;
     font-family: Libre Caslon Text;
     font-weight: 700;
     line-height: 46px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    z-index: -1;
 }
 
 .contact-description{
@@ -454,6 +472,10 @@ section {
     /*------------------------------mobile about us----------------------------*/
 
     /*------------------------------mobile contact us----------------------------*/
+    body, html{
+        overflow-x: hidden;
+    }
+    
     .contact-inputs{
         width: 100%;
         max-width: 100%;
@@ -470,8 +492,9 @@ section {
     }
     .contact-container{
         padding: 20px;
-        width:90%;
+        justify-content: normal;
         margin: 0 auto;
+        width: auto;
     }
     .contact-left button{
         width: 80vw;
@@ -480,6 +503,8 @@ section {
         font-size: 48px;
         text-align: center;
         padding-top: 10px;
+        margin: 0px;
+        padding-left: 0px;
        
     }
     .contact-right{
@@ -487,13 +512,27 @@ section {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        padding: 20px;
+        width:90%;
+      
+       
+    }
+    .contact-right h3{
+        font-size: 25px;;
     }
     .contactimg{
+        align-items: center;
+        justify-content: center;
         max-width: 90%;
         padding: 25px;
         padding-top: 0px;
         height: auto;
         padding-bottom: 10px;
+        margin: 0px;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        
+     
     }
     .info-wrapper {
         display: flex;
@@ -504,6 +543,10 @@ section {
         max-width: 600px;
         margin: 0 auto;
         padding-top: 1rem;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
     }
     .info-item {
         display: flex;
@@ -512,21 +555,27 @@ section {
         margin-bottom: 2rem;  
         width: 100%;  
         max-width: 300px;  
+        
     }
     .info-item p {
         text-align: left;  
         margin: 0;  
+      
     }
     .icon {
         flex-shrink: 0;  
         width: 24px;  
         height: 24px;
+        padding-left: 5vw;
     }
     .contact-description{
-        max-width: 70%;
+        max-width: 75%;
         margin: 0 auto;
         text-align: center;
-        padding-bottom: 10px;        
+        padding-bottom: 10px;  
+        margin-right: 5vw;   
+        margin-left: 5vw; 
+        
     }
     header{
         font-size: 1vh;
