@@ -66,9 +66,16 @@ body.home p{
     margin-bottom: 20px;
     padding-left: 25%;
 }
+
+.ski-camp-event{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
   
 .date-box {
-    background-color: #a9bfd9; /* or your chosen light blue */
+    background-color: #a9bfd9; 
     padding: 15px 20px;
     text-align: center;
     margin-right: 20px;
@@ -147,6 +154,57 @@ body.home p{
     margin-bottom: 15px;
 }  
 
+.faq {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Libre Caslon Text', serif;
+}
+  
+details {
+    background: #f3f3f3;
+    color: #103144;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-align: left;
+}
+  
+summary {
+    font-size: 1.1rem;
+    font-weight: 500;
+    list-style: none;
+    position: relative;
+    text-align: left;
+}
+  
+summary::marker {
+    display: none;
+}
+  
+summary::after {
+    content: "▾";
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s ease;
+}
+  
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+  
+body.home details p {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding-left:0px;
+}
+
 .lessons {
     background-color: #f4f4f4; /* light background */
     color: #103144; /* dark text */
@@ -157,7 +215,7 @@ body.home p{
 }
   
 .lessons h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 30px;
 }
   
