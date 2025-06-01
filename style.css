@@ -581,7 +581,7 @@ section {
     .contact-right h3{
         font-size: 25px;;
     }
-    .contactimg{
+    /* .contactimg{
         display: flex;
         align-items: center;
         width: 465px;
@@ -597,7 +597,17 @@ section {
         margin: 0 auto;
         width: auto;
      
-    }
+    } */
+    .contactimg {
+        display: block;              /* removes default inline spacing */
+        width: 350px;                /* shrink the image – adjust as needed */
+        max-width: 90%;            /* responsive scaling */
+        height: auto;               /* maintain aspect ratio */
+        margin: 2rem auto;          /* center horizontally with spacing */
+        border: 10px solid #cbe7c3; /* optional green border like your screenshot */
+        border-radius: 8px;         /* optional rounded corners */
+        padding: 0;
+      }
     .info-wrapper {
         display: flex;
         flex-direction: column;
@@ -659,4 +669,11 @@ section {
         font-size: 14px;
     }
    
+}
+
+/*------------------------------mobile view----------------------------*/
+@media (min-width: 1700px) {
+    section#contact {
+        padding-left: 15%;
+      }
 }
